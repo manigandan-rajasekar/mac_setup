@@ -15,3 +15,5 @@ ln -sf /Users/manigandan/workplace/mac_setup/.gitignore /Users/manigandan/.gitig
 ln -sf /Users/manigandan/workplace/mac_setup/.gitconfig /Users/manigandan/.gitconfig
 ln -sf /Users/manigandan/workplace/mac_setup/.zshrc /Users/manigandan/.zshrc
 ln -sf /Users/manigandan/workplace/mac_setup/.profile /Users/manigandan/.profile
+
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
