@@ -1,0 +1,15 @@
+# create a new session with name
+alias tmuxnew='tmux new -s'
+# list sessions
+alias tmuxl='tmux list-sessions'
+# tmuxa <session> : attach to <session> (force 256color and detach others)
+alias tmuxa='tmux -2 attach-session -d -t'
+
+# I am lazy, yeah
+alias t='tmuxa'
+
+function ssh-tmuxa {
+    host="$1"
+    ssh $host -t tmux attach -d -t "$2"
+}
+alias sshta=ssh-tmuxa
